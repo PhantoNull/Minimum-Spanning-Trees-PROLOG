@@ -83,7 +83,7 @@ This program outputs a Minimum Spanning Tree (or more) for a given graph.
   An example of normal system interrogation may be:
 ```Prolog
    mst_get(graph_name, source, LIST).
-```Prolog
+```
   It is also possible to obtain all the possible mst from all loaded graphs
   in memory starting from different vertices by passing only variables:
 ```Prolog
