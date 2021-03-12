@@ -51,8 +51,8 @@ This program outputs a Minimum Spanning Tree (or more) for a given graph.
    updated with the last value given.
 
   Load a graph from file in interpreter by using read_graph predicate:
-  ```
-    ?- read_graph(G, 'FilePath.csv').
+  ```Prolog
+    read_graph(G, 'FilePath.csv').
   ```
 
 
@@ -61,14 +61,14 @@ This program outputs a Minimum Spanning Tree (or more) for a given graph.
   It is possible to save a graph to a file in two ways:
 
   1. **PASSING AN EXISTING GRAPH**  *(graph mode)*
-  ```
-     ?- write_graph(graphname, 'FilePath.csv', 'graph').
+  ```Prolog
+     write_graph(graphname, 'FilePath.csv', 'graph').
   ```
   *Note: 3rd parameter is optional and 'graph' is its default value.*
 
   2. **PASSING A LIST OF ARCS** AS [arc(G, U, V, W), ...]  *(edge mode)*
-  ```
-     ?- write_graph(LIST, 'FilePath.csv', 'edge').
+  ```Prolog
+     write_graph(LIST, 'FilePath.csv', 'edge').
   ```
 
   The file will be created in the enviroment working directory if absolute
@@ -81,13 +81,13 @@ This program outputs a Minimum Spanning Tree (or more) for a given graph.
    by lexicographical order for nodes on same depth with a common parent.
   Source is the starting vertex of computation.
   An example of normal system interrogation may be:
-```
-   ?-mst_get(graph_name, source, LIST).
-```
+```Prolog
+   mst_get(graph_name, source, LIST).
+```Prolog
   It is also possible to obtain all the possible mst from all loaded graphs
   in memory starting from different vertices by passing only variables:
-```
-   ?-mst_get(G, S, LIST)
+```Prolog
+   mst_get(G, S, LIST)
 ```
    It is possible to combine VAR and NONVAR parameter as wished to obtain
     any kind of combinational results.
@@ -95,8 +95,8 @@ This program outputs a Minimum Spanning Tree (or more) for a given graph.
 
 ### [ Memory management ]
   When a graph is no more needed, you may delete it with predicate:
-```
-   ?-delete_graph(graphname).
+```Prolog
+   delete_graph(graphname).
 ```
   This will delete delete everything related to the graph in memory.
 
@@ -105,8 +105,8 @@ This program outputs a Minimum Spanning Tree (or more) for a given graph.
   Consulting a long list of arcs in the interpreter may be problematic.
   If you want to have access to a more readable format you may save
    mst_get and mst_get_nested result list to a .csv file:
-```
-   ?-mst_get(g, v, L), write_graph(L, 'preorder.csv', 'edge').
+```Prolog
+   mst_get(g, v, L), write_graph(L, 'preorder.csv', 'edge').
 ```
 
 ## Credits
