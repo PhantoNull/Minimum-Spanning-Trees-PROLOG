@@ -87,7 +87,7 @@ This program outputs a Minimum Spanning Tree (or more) for a given graph.
   It is also possible to obtain all the possible mst from all loaded graphs
   in memory starting from different vertices by passing only variables:
 ```Prolog
-   mst_get(G, S, LIST)
+   mst_get(G, S, LIST).
 ```
    It is possible to combine VAR and NONVAR parameter as wished to obtain
     any kind of combinational results.
