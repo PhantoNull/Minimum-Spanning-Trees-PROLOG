@@ -31,6 +31,7 @@
 
 # Instructions
 This program outputs a Minimum Spanning Tree (or more) for a given graph.
+Works with unconnected graphs.
 
 ### [ Loading a graph ]
   Before any operation can be done you need to have a graph to work on.
@@ -42,7 +43,7 @@ This program outputs a Minimum Spanning Tree (or more) for a given graph.
 
   ![example-graph.png](example-graph.png?raw=true)
 
-  Another graph ([prim_benchmark.csv](graphs/prim_benchmark.csv)) is available for efficiency benchmarks.
+  Another randomly generated graph ([prim_benchmark.csv](graphs/prim_benchmark.csv)) is available for efficiency benchmarks.
 
   Alternatively it is possible to create and edit a graph manually
   through graph structure's predicates ***new_graph***, ***new_vertex*** & ***new_arc***.
