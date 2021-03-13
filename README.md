@@ -29,6 +29,7 @@
  To maximize efficiency permutation are taken into account only when
   lists are passed as non-var.
 
+
 # Instructions
 This program outputs a Minimum Spanning Tree (or more) for a given graph.
 Works with unconnected graphs.
@@ -111,6 +112,7 @@ Works with unconnected graphs.
 ```Prolog
    mst_get(g, v, L), write_graph(L, 'preorder.csv', 'edge').
 ```
+
 
 ## Credits
 OA: https://github.com/PhantoNa
