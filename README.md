@@ -20,8 +20,8 @@
   produce an implementation of a MINHEAP (or MIN-PRIORITY-QUEUE).
 
 
- My solution to the problem strives to maximize memory and time efficiency
-  while trying to offer a solid structure of predicates.
+ My solution to the problem ***strives to maximize memory and time efficiency
+  while trying to offer a solid structure of predicates.***
 
  An example of this effort are predicates as *graph_arcs*, *graph_vertices* or *adjs*.
  To grant their robustness these predicates evaluate permutations of lists
