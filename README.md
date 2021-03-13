@@ -1,5 +1,5 @@
 # Minumum Spanning Tree in Prolog
-![graph-title.png](graph-title.png?raw=true)
+![graph-title.png](img/graph-title.png?raw=true)
 ## Introduction
 
  A problem that often appears in various guises is connecting
@@ -41,7 +41,7 @@ Works with unconnected graphs.
 
   An [example of .csv graph file](graphs/graph_example.csv) is loaded in the repo.
 
-  ![example-graph.png](example-graph.png?raw=true)
+  ![example-graph.png](img/example-graph.png?raw=true)
 
   Another randomly generated graph ([prim_benchmark.csv](graphs/prim_benchmark.csv)) is available for efficiency benchmarks.
 
