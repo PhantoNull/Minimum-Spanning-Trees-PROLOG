@@ -1,4 +1,4 @@
-# Minumum Spanning Tree in Prolog
+# Minumum Spanning Trees in Prolog
 ![graph-title.png](img/graph-title.png?raw=true)
 ## Introduction
 
