@@ -38,9 +38,11 @@ This program outputs a Minimum Spanning Tree (or more) for a given graph.
   separator. Each row represent an arc:
     vertex1 vertex2 weight
 
-  An [example of .csv graph file](graph-example.csv) is loaded in the repo.
+  An [example of .csv graph file](graphs/graph_example.csv) is loaded in the repo.
 
   ![example-graph.png](example-graph.png?raw=true)
+
+  Another graph ([prim_benchmark.csv](graphs/prim_benchmark.csv)) is available for efficiency benchmarks.
 
   Alternatively it is possible to create and edit a graph manually
   through graph structure's predicates ***new_graph***, ***new_vertex*** & ***new_arc***.
