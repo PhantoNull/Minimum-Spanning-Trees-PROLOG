@@ -1,7 +1,7 @@
 % -*- Mode: Prolog -*-
 
 %%%% mst.lips
-%%%  OA: https://github.com/PhantoNa
+%%%  OA: https://github.com/PhantoNull
 %%%  Originally made for an university project
 
 :- use_module(library(csv)).
