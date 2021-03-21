@@ -212,15 +212,14 @@ new_heap(H) :-
 
 new_heap(H) :-
     nonvar(H),
-    assert(heap(H, 0)),
-    !.
+    assert(heap(H, 0)).
 
 delete_heap(H) :-
     nonvar(H),
     heap(H, _),
+    !,
     retractall(heap(H, _)),
-    retractall(heap_entry(H, _, _, _)),
-    !.
+    retractall(heap_entry(H, _, _, _)).
 
 heap_has_size(H, S) :-
     heap(H, S),
@@ -271,12 +270,12 @@ heapify_up(H, P) :-
     Par is div(P, 2),
     heap_entry(H, Par, KPar, VPar),
     K < KPar,
+    !,
     retract(heap_entry(H, P, K, V)),
     assert(heap_entry(H, Par, K, V)),
     retract(heap_entry(H, Par, KPar, VPar)),
     assert(heap_entry(H, P, KPar, VPar)),
-    heapify_up(H, Par),
-    !.
+    heapify_up(H, Par).
 
 heapify_up(_H, _P) :- true.
 
@@ -288,12 +287,12 @@ heapify_down(H, P) :-
     heap_entry(H, R, Kr, Vr),
     Kr < Kl,
     Kr < K,
+    !,
     retract(heap_entry(H, P, K, V)),
     assert(heap_entry(H, R, K, V)),
     retract(heap_entry(H, R, Kr, Vr)),
     assert(heap_entry(H, P, Kr, Vr)),
-    heapify_down(H, R),
-    !.
+    heapify_down(H, R).
 
 heapify_down(H, P) :-
     heap_entry(H, P, K, V),
@@ -305,8 +304,7 @@ heapify_down(H, P) :-
     assert(heap_entry(H, L, K, V)),
     retract(heap_entry(H, L, Kl, Vl)),
     assert(heap_entry(H, P, Kl, Vl)),
-    heapify_down(H, L),
-    !.
+    heapify_down(H, L).
 
 heapify_down(_H, _P) :- true.
 
