@@ -117,4 +117,4 @@ Works with unconnected graphs.
 ## Credits
 OA: https://github.com/PhantoNull
 
-Originally made for an university project, feel free to use under MIT licensing.
+Feel free to use under MIT licensing.
